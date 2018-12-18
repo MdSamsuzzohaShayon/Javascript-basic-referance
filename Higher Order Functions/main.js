@@ -66,7 +66,7 @@ const ages = [33, 12, 45, 43, 24, 43, 11, 24, 23, 25, 26];
 
 
 //FILTER
-//GETTING 21 ANR OLDER PEOPLE BY FILTERING
+//GETTING 21 AND OLDER PEOPLE BY FILTERING
 /*
 let canDrink =[];
 for (let i =0; i< ages.length;i++){

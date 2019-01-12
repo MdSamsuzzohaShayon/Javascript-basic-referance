@@ -4,7 +4,7 @@ function Book(title, author, year) {
     this.year = year;
 }
 
-//WE WANT TITLE AUTHOR AND YEAR FOR EVERY BOOK BUT WE DON'T WANT PROTOTYPES METHOW FOR EVERY BOOK
+//WE WANT TITLE, AUTHOR AND YEAR FOR EVERY BOOK BUT WE DON'T WANT PROTOTYPES METHOW FOR EVERY BOOK
 Book.prototype.getSummary = function () {
     this.getSummary = function () {
         return `${this.title} was written by ${this.author} in ${this.year}`;
@@ -27,7 +27,7 @@ Book.prototype.revise =(newYear)=>{
 
 //INSTANTIATE AN OBJECT
 const book3 = new Book('Percy Jackson', "some one", 2000);
-// console.log(book1);
+// console.log(book3);
 // console.log(book3.getSummary());
 
 // console.log(book3.getAge());

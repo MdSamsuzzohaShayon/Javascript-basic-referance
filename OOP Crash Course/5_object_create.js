@@ -17,3 +17,4 @@ const book1 = Object.create(bookPhotos);
 book1.title = "Vogue";
 book1.author = ' Anna Wintour';
 book1.year = "2013";
+console.log(book1);

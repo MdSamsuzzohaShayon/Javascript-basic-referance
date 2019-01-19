@@ -1,0 +1,12 @@
+https://webpack.js.org/
+https://babeljs.io/
+
+allow me to use npm module or own module a compile and down
+
+don't need web server
+
+for compiling 
+npm run build
+
+
+

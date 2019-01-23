@@ -21,13 +21,16 @@ function getPosts() {
         document.body.innerHTML = output;
     }, 1000)
 }
+// getPosts();
+
+
 
 function createPost(post, callback){
     setTimeout(()=>{
         posts.push(post);
         // ASYNC WAY
         // IT WILL NOT WAIT 2 SECOND
-        callback(); // FOR THIS CALL BACK GET POST WILL RUN RIGHT AFTER THE CALL BACK 
+        callback(); // FOR THIS CALL BACK GET POST WILL RUN RIGHT AFTER THE CALL BACK  AND THIS IS CALLBACK OF GETPOSTS FUNCTION ABOVE
     }, 2000);
 }
 

@@ -12,7 +12,8 @@ console.log(typeof s2);*/
 // console.log(navigator.appVersion);
 
 /*
-//javascript object literal
+
+// JAVASCRIPT OBJECT LITERAL
 const book = {
     title: 'Book One',
     author: 'Neymar',

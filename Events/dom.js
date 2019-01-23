@@ -1,9 +1,9 @@
 // MOUSE CLICK EVENT
 
-/*let button = document.getElementById('button').addEventListener(
+let button = document.getElementById('button').addEventListener(
     'click',
     buttonClick
-);*/
+);
 function buttonClick(e){
     /*console.log('button clicked');
     document.getElementById('header-title').textContent = 'Changed';

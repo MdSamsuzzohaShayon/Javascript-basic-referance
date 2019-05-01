@@ -17,7 +17,7 @@
 
 [all types of events](https://developer.mozilla.org/en-US/docs/Web/Events)
 
-### Most common categories
+### [Most common categories](https://developer.mozilla.org/en-US/docs/Web/Events#Most_common_categories)
 
  - Resource event
  - network events
@@ -41,7 +41,7 @@
  - Value change events
  - Uncategorized events
 
-### Less common and non-standard events
+### [Less common and non-standard events](https://developer.mozilla.org/en-US/docs/Web/Events#Less_common_and_non-standard_events)
 
  - Abortable Fetch events
  - WebVR events

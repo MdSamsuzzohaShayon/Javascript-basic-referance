@@ -72,13 +72,13 @@
 ### [Mozilla-specific events](https://developer.mozilla.org/en-US/docs/Web/Events#Mozilla-specific_events)
 
 
-# High Order Functions
+## High Order Functions
 
-## All Built-in functions
+### All Built-in functions
 
-## [Standard built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
+### [Standard built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
 
-### [Standard objects by category](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects#Standard_objects_by_category)
+#### [Standard objects by category](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects#Standard_objects_by_category)
 
  - Value properties
  - Function properties

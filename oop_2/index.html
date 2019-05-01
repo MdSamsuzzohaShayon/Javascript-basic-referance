@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- INSPIRATIONS -->
+<!-- http://preview.themeforest.net/item/wunderkind-one-page-parallax-theme/full_screen_preview/7601990 -->
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OOP</title>
+    <link rel="stylesheet" href="../css/semantic.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #showcase {
+            width: 100%;
+            height: 100vh;
+            background-image: url(../img/flower.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .skill {
+            color: white;
+            background-image: url(../img/nature.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .active {
+            animation-name: animateBtn;
+            animation-duration: 2s;
+        }
+
+        @keyframes animateBtn {
+            from {
+                transform: scaleX(0);
+            }
+
+            to {
+                transform: scaleX(100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="showcase">
+        <div class="ui top fixed massive menu" id="menu">
+            <div class="item">
+                <img
+                    src="https://www.designfreelogoonline.com/wp-content/uploads/2016/03/000706-online-camera-eye-logo-free-logo-maker-01.png">
+            </div>
+            <div class="right menu">
+                <a class="item">Features</a>
+                <a class="item">Testimonials</a>
+                <a class="item">Sign-in</a>
+            </div>
+        </div>
+        <br><br><br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="ui container center aligned">
+            <h2 class="ui header green">Nice to meet you</h2>
+            <br><br>
+            <button class="ui button massive green animated active" id="btn"> What we do? </button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- OUTPUTING FROM JS -->
+        <div class="ui container">
+            <div class="ui big floating green message">
+                <div id="sms"></div>
+            </div>
+        </div>
+
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="ui container center aligned">
+        <h2 class="ui header">This is Shayon</h2>
+        <h4 class="ui header small">A freelancer youtuber and web developer</h4>
+
+        <div class="ui two column grid">
+            <div class="row">
+                <div class="column ">
+                    <div class="ui segment">
+                        <h2 class="ui header big">I Am Creative</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, pariatur? Corrupti dolores
+                            quae error ad dolor
+                            assumenda inventore vitae facilis amet nisi ex reprehenderit molestiae ipsum reiciendis,
+                            quod cumque similique
+                            omnis nulla? Corporis suscipit veritatis atque
+                            tempora ea, voluptas illum obcaecati eaque ducimus non nobis aperiam totam unde dignissimos
+                            aut!</p>
+                    </div>
+                </div>
+                <div class="column ">
+                    <div class="ui segment">
+                        <h2 class="ui header big">I Am Creative</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, pariatur? Corrupti dolores
+                            quae error ad dolor
+                            assumenda inventore vitae facilis amet nisi ex reprehenderit molestiae ipsum reiciendis,
+                            quod cumque similique
+                            omnis nulla? Corporis suscipit veritatis atque
+                            tempora ea, voluptas illum obcaecati eaque ducimus non nobis aperiam totam unde dignissimos
+                            aut!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column ">
+                    <div class="ui segment">
+                        <h2 class="ui header big">I Am Creative</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, pariatur? Corrupti dolores
+                            quae error ad dolor
+                            assumenda inventore vitae facilis amet nisi ex reprehenderit molestiae ipsum reiciendis,
+                            quod cumque similique
+                            omnis nulla? Corporis suscipit veritatis atque
+                            tempora ea, voluptas illum obcaecati eaque ducimus non nobis aperiam totam unde dignissimos
+                            aut!</p>
+                    </div>
+                </div>
+                <div class="column ">
+                    <div class="ui segment">
+                        <h2 class="ui header big">I Am Creative</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, pariatur? Corrupti dolores
+                            quae error ad dolor
+                            assumenda inventore vitae facilis amet nisi ex reprehenderit molestiae ipsum reiciendis,
+                            quod cumque similique
+                            omnis nulla? Corporis suscipit veritatis atque
+                            tempora ea, voluptas illum obcaecati eaque ducimus non nobis aperiam totam unde dignissimos
+                            aut!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="skill">
+        <div class="ui container">
+            <div class="ui two column grid">
+                <div class="row">
+                    <div class="column">
+                        <h2 class="ui header large pink">Our Skill</h2>
+                        <h4 class="ui header blue small">Creating With Love</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut quaerat harum
+                            necessitatibus a minima, impedit rem consequatur voluptates explicabo.</p>
+                    </div>
+                    <div class="column">
+                        <div class="ui progress success" data-percent="74" id="example1">
+                            <div class="bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="label">Everything worked, your file is all ready.</div>
+                        </div>
+                        <div class="ui progress success">
+                            <div class="bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="label">Everything worked, your file is all ready.</div>
+                        </div>
+                        <div class="ui progress success">
+                            <div class="bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="label">Everything worked, your file is all ready.</div>
+                        </div>
+                        <div class="ui progress success">
+                            <div class="bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="label">Everything worked, your file is all ready.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+    <!-- <div class="ui container">
+        <div class="controls">
+            <button id="img-error" type="button" class="ui brown large button">Generate image error</button>
+            <img class="bad-img" />
+        </div>
+        <br><br>
+
+        <div class="event-log">
+            <label>Event log:</label>
+            <textarea readonly class="event-log-contents" rows="8" cols="30"></textarea>
+        </div>
+    </div> -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/semantic.min.js"></script>
+    <script src="1_previous_practice.js"></script>
+    <script src="2_object.js"></script>
+    <script src="3_class.js"></script>
+    <script src="4_inharitance.js"></script>
+</body>
+
+</html>

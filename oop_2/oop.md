@@ -1,5 +1,3 @@
-# Javascript-basic-referance
-
 # OOP
 
 ## [Object basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)

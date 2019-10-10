@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bg{
+    background: green;
+}
+#img-holder img{
+    width: 200px;
+}

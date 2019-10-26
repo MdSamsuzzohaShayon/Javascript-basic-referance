@@ -4,6 +4,9 @@
 }
 body{
     background: rgb(52, 112, 224);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
 }
 .wrapper{
     width: 100%;

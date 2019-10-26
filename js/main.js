@@ -8,3 +8,42 @@
 //     duration: 2000,
 //     iterations: Infinity
 //   });
+
+
+// document.body.style.height= "100vh";
+// document.body.style.width= "100vw";
+// document.body.style.overflow= "hidden";
+
+
+// const car = document.getElementById("car");
+
+
+
+// CAR ANIMATION
+class CarAnimate {
+    car = document.getElementById("car");
+    constructor(){
+        carRightKeyframes = new KeyframeEffect(
+            car,
+            [{
+                    transform: 'translateX(0%)'
+                },
+                {
+                    transform: 'translateX(100%)'
+                }
+            ], {
+                duration: 3000,
+                fill: 'forwards',
+                iterations: Infinity
+            }
+        );
+    }
+    carRightAnimation = new Animation(carRightKeyframes, document.timeline);
+    start(){
+        carRightAnimation.play();
+    }
+}
+
+
+const CarAnimate = new CarAnimate()
+CarAnimate.start();

@@ -90,6 +90,9 @@ carAnimation.animationMade();
 const car = document.getElementById("car");
 const cloud_one = document.getElementById("cloud_one");
 const cloud_two = document.getElementById("cloud_two");
+const fog_one = document.getElementById("fog_one");
+const fog_two = document.getElementById("fog_two");
+
 
 
 
@@ -115,12 +118,12 @@ class CarAnimate {
             id,
             [{
                     // transform: 'translateY(' + this.tYStart + '%)',
-                    transform: 'translateX(' + this.tXStart + '%)',
+                    transform: 'translateX(' + this.tXStart + '%) translateY('+this.tYStart+'%)',
                     opacity: this.startOpacity
                 },
                 {
                     // transform: 'translateY(' + this.tYStop + '%)',
-                    transform: 'translateX(' + this.tXStop+ '%)',
+                    transform: 'translateX(' + this.tXStop+ '%) translateY('+this.tYStop+'%)',
                     opacity: this.stopOpacity
                 }
             ], {
@@ -140,15 +143,23 @@ class CarAnimate {
 }
 
 // CAR ANIMATION 
-const carAnimate = new CarAnimate('0', '100', '0', '0', 0, 1);
+const carAnimate = new CarAnimate('0', '100', '0', '0', 1, 1);
 carAnimate.start(car, 2000, Infinity);
 
 
 
 // CLOUDS ANIMATION
-const cloudAnimate = new CarAnimate('0', '100', '0', '100', 0.8, 1);
-carAnimate.start(cloud_one, 10000, Infinity);
-carAnimate.start(cloud_two, 15000, Infinity);
+const cloudAnimate = new CarAnimate('0', '100', '0', '0', 0.2, 1);
+cloudAnimate.start(cloud_one, 10000, Infinity);
+const cloud2Animate = new CarAnimate('0', '130', '0', '0', 0.2, 1);
+cloud2Animate.start(cloud_two, 15000, Infinity);
+
+
+// FOG ANIMATION
+const fogAnimate = new CarAnimate('0', '150', '0', '-10', 0, 1);
+fogAnimate.start(fog_one, 10000, Infinity);
+const fog2Animate = new CarAnimate('0', '-40', '0', '-20', 1, 0.5);
+fog2Animate.start(fog_two, 5000, Infinity);
 
 
 

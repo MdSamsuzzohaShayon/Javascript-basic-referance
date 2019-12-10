@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Disable Right Click</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background: rgb(230, 230, 230);
+            font-family: serif;
+        }
+
+        nav {
+            /* margin-bottom: 200px; */
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            position: fixed;
+            background: rgb(133, 133, 133);
+        }
+
+        nav li {
+            margin: 35px 15px 0 15px;
+            display: inline-block;
+            list-style: none;
+            text-transform: uppercase;
+        }
+
+        a {
+            font-size: 1.3rem;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        .service {
+            /* display: inline-block; */
+            /* text-align: center; */
+            /* margin-top: 200px; */
+            display: flex; 
+            flex-basis: 20%;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .box {
+            color: white;
+            padding: 10px;
+            background: rgb(46, 32, 32);
+            /* margin: 100px 80px; */
+            margin-top: 100px;
+            width: 500px;
+            height: 200px;
+        }
+        .btn{
+            position: relative;
+            top: 100px;
+            width: 100%;
+            padding: 8px 230px;
+            height: 30px;
+            text-align: center;
+            background: rgb(110, 60, 60);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="noContextMenu">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">blog</a></li>
+            </ul>
+        </nav>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <section class="service">
+            <div class="box">
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat laboriosam debitis a, facilis quia,
+                    eligendi possimus repellat est architecto commodi tempore dolorum recusandae, natus iste.</p>
+                <a href="#" class="btn">Click</a>
+            </div>
+            <div class="box">
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat laboriosam debitis a, facilis quia,
+                    eligendi possimus repellat est architecto commodi tempore dolorum recusandae, natus iste.</p>
+                <a href="#" class="btn">Click</a>
+            </div>
+            <div class="box">
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat laboriosam debitis a, facilis quia,
+                    eligendi possimus repellat est architecto commodi tempore dolorum recusandae, natus iste.</p>
+                <a href="#" class="btn">Click</a>
+            </div>
+            <div class="box">
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat laboriosam debitis a, facilis quia,
+                    eligendi possimus repellat est architecto commodi tempore dolorum recusandae, natus iste.</p>
+                <a href="#" class="btn">Click</a>
+            </div>
+        </section>
+    </div>
+
+
+    <script>
+        const noContext = document.getElementById('noContextMenu');
+
+
+        noContext.addEventListener('contextmenu', e => {
+            e.preventDefault();
+        }, true);
+    </script>
+</body>
+
+</html>

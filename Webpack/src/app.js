@@ -4,13 +4,9 @@ const addValuesButton = document.getElementById("addValues");
 const resultDiv = document.getElementById("result");
 const errorBox = document.getElementById("error");
 
-const parseInputs = (...input) => {
-  return input.map(str => parseInt(str));
-};
 
-const inputsAreValid = (...input) => {
-  return input.every(num => typeof num === "number" && !isNaN(num));
-};
+
+
 
 const handleAdditionError = (inputs, numbers) => {
   const fullMessage = inputs.reduce((message, str, index) => {

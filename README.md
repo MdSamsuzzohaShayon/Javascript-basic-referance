@@ -6,6 +6,7 @@
  - Install webpack `npm install -D webpack webpack-cli`
  - Install few  more package `npm install -D html-webpack-plugin html-loader`
  - Create a **src** folder
+ - Create an **index.js** file inside src folder, by default webpack will loo for index.js (We can change entry point later on)
  - Make a script in package.json `"build": "webpack"`
  - Run `npm run build`
  - Install dev server `npm i -D webpack-dev-server`

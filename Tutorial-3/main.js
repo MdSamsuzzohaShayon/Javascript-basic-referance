@@ -211,7 +211,7 @@ async function displayUser(){
     console.log("Detail: ", detail);
   } catch (e) {
     console.log(e);
-  } 
+  }
 
 }
 displayUser();
@@ -251,7 +251,7 @@ Promise.all([yt, fb])
 
 
 // I SHELL USE PROMISE ALL FOR MY NODEJS PROJECT
-
+// https://stackoverflow.com/questions/60710423/fetch-in-fetch-inside-a-loop-js
 
 
 

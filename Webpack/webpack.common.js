@@ -7,7 +7,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require("path");
 
 module.exports = {
-    entry: "./src/index.js",
+    entry: { 
+        main: "./src/index.js" ,
+        vendor: './src/vendor.js'
+    },
     plugins:  // webpack has a rich plugin interface. Most of the features within webpack itself use this plugin interface.
         [
             new HtmlWebpackPlugin({

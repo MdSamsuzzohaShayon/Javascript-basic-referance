@@ -1,6 +1,6 @@
 # Webpack
 
- - [Tutorial](https://www.youtube.com/watch?v=TzdEpgONurw)
+ - [Tutorial](https://www.youtube.com/watch?v=TzdEpgONurw) [Webpack 5 react project](https://www.youtube.com/watch?v=TOb1c39m64A)
 
  - Create **package.json** `npm init -y`
  - Install webpack `npm install -D webpack webpack-cli`

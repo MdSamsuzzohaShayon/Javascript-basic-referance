@@ -11,7 +11,7 @@ const path = require("path");
 module.exports = merge(common, {
     mode: "production",
     output: {
-        filename: "main.[contenthash].js", // https://webpack.js.org/guides/caching/
+        filename: "[name].[contenthash].bundle.js", // https://webpack.js.org/guides/caching/
         path: path.resolve(__dirname, "dist"),
         assetModuleFilename: 'img/[hash][ext][query]'
     },

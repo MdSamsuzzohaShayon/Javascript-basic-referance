@@ -8,7 +8,7 @@ module.exports = merge(common, {
     mode: "development",
     devtool: "source-map",
     output: {
-        filename: "main.js", // https://webpack.js.org/guides/caching/
+        filename: "[name].bndle.js", // https://webpack.js.org/guides/caching/
         path: path.resolve(__dirname, "dist"),
         assetModuleFilename: 'img/[hash][ext][query]'
     }

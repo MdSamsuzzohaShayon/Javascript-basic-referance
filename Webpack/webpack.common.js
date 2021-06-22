@@ -1,9 +1,6 @@
 // https://webpack.js.org/configuration/
 
 
-
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-
 const path = require("path");
 
 module.exports = {
@@ -11,20 +8,10 @@ module.exports = {
         main: "./src/index.js" ,
         vendor: './src/vendor.js'
     },
-    plugins:  // webpack has a rich plugin interface. Most of the features within webpack itself use this plugin interface.
-        [
-            new HtmlWebpackPlugin({
-                template: "./src/template.html"  // https://github.com/jantimon/html-webpack-plugin#options
-            })
-        ],
 
     // npm install --save-dev css-loader
     module: {
         rules: [
-            {
-                test: /\.svg/,
-                type: 'asset/inline', // Asset Modules is a type of module that allows one to use asset files (fonts, icons, etc) without configuring additional loaders. https://webpack.js.org/guides/asset-modules/
-            },
             {
                 test: /\.html$/,
                 loader: "html-loader", // html-loader Exports HTML as string, require references to static resources
@@ -57,7 +44,19 @@ module.exports = {
                         },
                     }
                 },
-            }
+            },
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                use: [
+                  {
+                    loader: 'file-loader',
+                    options: {
+                        name: "[name].[hash].[ext]",
+                        outputPath: "imgs"
+                    }
+                  },
+                ],
+              },
         ]
     },
 };

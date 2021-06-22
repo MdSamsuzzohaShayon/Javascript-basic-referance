@@ -14,9 +14,14 @@ module.exports = {
                 template: "./src/template.html"  // https://github.com/jantimon/html-webpack-plugin#options
             })
         ],
+
     // npm install --save-dev css-loader
     module: {
         rules: [
+            {
+                test: /\.svg/,
+                type: 'asset/inline', // Asset Modules is a type of module that allows one to use asset files (fonts, icons, etc) without configuring additional loaders. https://webpack.js.org/guides/asset-modules/
+            },
             {
                 test: /\.scss$/,
                 use: [
@@ -24,6 +29,39 @@ module.exports = {
                     "css-loader", // STEP 2. TURN CSS INTO COMMON JS
                     "sass-loader" // STEP 1. TURNS SASS INTO CSS
                 ]
+            },
+            {
+                test: /\.html$/,
+                loader: "html-loader", // html-loader Exports HTML as string, require references to static resources
+                options: {
+                    sources: {
+                        list: [
+                            // All default supported tags and attributes
+                            '...',
+                            {
+                                tag: 'img',
+                                attribute: 'data-src',
+                                type: 'src',
+                            },
+                            {
+                                tag: 'img',
+                                attribute: 'data-srcset',
+                                type: 'srcset',
+                            },
+                        ],
+                        urlFilter: (attribute, value, resourcePath) => {
+                            // The `attribute` argument contains a name of the HTML attribute.
+                            // The `value` argument contains a value of the HTML attribute.
+                            // The `resourcePath` argument contains a path to the loaded HTML file.
+
+                            if (/example\.svg$/.test(value)) {
+                                return false;
+                            }
+
+                            return true;
+                        },
+                    }
+                },
             }
         ]
     },

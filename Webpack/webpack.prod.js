@@ -1,6 +1,8 @@
 // https://webpack.js.org/configuration/
 const common = require('./webpack.common');
-const {merge} = require('webpack-merge')
+const {merge} = require('webpack-merge');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+
 
 
 
@@ -10,6 +12,8 @@ module.exports = merge(common, {
     mode: "production",
     output: {
         filename: "main.[contenthash].js", // https://webpack.js.org/guides/caching/
-        path: path.resolve(__dirname, "dist")
+        path: path.resolve(__dirname, "dist"),
+        assetModuleFilename: 'img/[hash][ext][query]'
     },
+    plugins: [new CleanWebpackPlugin()]
 });

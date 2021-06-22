@@ -11,5 +11,5 @@ module.exports = merge(common, {
         filename: "[name].bndle.js", // https://webpack.js.org/guides/caching/
         path: path.resolve(__dirname, "dist"),
         assetModuleFilename: 'img/[hash][ext][query]'
-    }
+    },
 });

@@ -26,14 +26,6 @@ module.exports = {
                 type: 'asset/inline', // Asset Modules is a type of module that allows one to use asset files (fonts, icons, etc) without configuring additional loaders. https://webpack.js.org/guides/asset-modules/
             },
             {
-                test: /\.scss$/,
-                use: [
-                    "style-loader",// STEP 3. INJECT STYLE INTO DOM
-                    "css-loader", // STEP 2. TURN CSS INTO COMMON JS
-                    "sass-loader" // STEP 1. TURNS SASS INTO CSS
-                ]
-            },
-            {
                 test: /\.html$/,
                 loader: "html-loader", // html-loader Exports HTML as string, require references to static resources
                 options: {

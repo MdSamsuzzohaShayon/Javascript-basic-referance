@@ -12,11 +12,15 @@ module.exports = {
     },
     // https://webpack.js.org/loaders/css-loader/
     // npm install --save-dev css-loader
-    module:{
+    module: {
         rules: [
             {
                 test: /\.scss$/,
-                use: ["style-loader", "css-loader"]
+                use: [
+                    "style-loader",// STEP 3. INJECT STYLE INTO DOM
+                    "css-loader", // STEP 2. TURN CSS INTO COMMON JS
+                    "sass-loader" // STEP 1. TURNS SASS INTO CSS
+                ]
             }
         ]
     }

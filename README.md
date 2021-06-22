@@ -11,4 +11,3 @@
  - Run `npm run build`
  - Install dev server `npm i -D webpack-dev-server`
  - Make another script for working as development environment `"dev": "webpack serve"`
- - `npm install --save-dev @babel/core @babel/cli babel-loader @babel/preset-env`

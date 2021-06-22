@@ -1,18 +1,13 @@
 // https://webpack.js.org/configuration/
 
+
+
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const path = require("path");
 
 module.exports = {
-    mode: "development",
-    devtool: "source-map",
     entry: "./src/index.js",
-    output: {
-        filename: "main.[contenthash].js", // https://webpack.js.org/guides/caching/
-        path: path.resolve(__dirname, "dist")
-    },
-    // https://webpack.js.org/loaders/css-loader/
     plugins:  // webpack has a rich plugin interface. Most of the features within webpack itself use this plugin interface.
         [
             new HtmlWebpackPlugin({
